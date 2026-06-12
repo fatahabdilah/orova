@@ -34,7 +34,7 @@ const holdings = [
     logoAlt: "Trade With Suli",
     logoClassName: "h-8 sm:h-10 lg:h-11 2xl:h-12",
     description:
-      "Indonesia’s largest crypto and trading education community, with 200K+ members across Discord and Instagram.",
+      "Indonesia’s crypto and trading education community, with 200K+ members across Discord and Instagram.",
   },
   {
     image: holdingAkasta,
