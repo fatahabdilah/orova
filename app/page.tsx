@@ -23,7 +23,7 @@ const holdings = [
     image: holdingClipper,
     logo: logoKonten,
     logoAlt: "Konten.com",
-    logoClassName: "h-7 lg:h-9",
+    logoClassName: "h-6 sm:h-7 lg:h-9",
     description:
       "Marketplace clipping di Indonesia yang menghubungkan brand dengan content clipper.",
   },
@@ -31,7 +31,7 @@ const holdings = [
     image: holdingEducation,
     logo: logoTws,
     logoAlt: "Trade With Suli",
-    logoClassName: "h-10 lg:h-12",
+    logoClassName: "h-8 sm:h-10 lg:h-12",
     description:
       "Indonesia’s largest crypto and trading education community, with 200K+ members across Discord and Instagram.",
   },
@@ -39,7 +39,7 @@ const holdings = [
     image: holdingAkasta,
     logo: logoAkasta,
     logoAlt: "Akasta Bali",
-    logoClassName: "h-24 lg:h-32",
+    logoClassName: "h-16 sm:h-20 lg:h-32",
     description:
       "Akasta is where Indonesian flavors come together with stunning live performances, creating something you truly experience.",
   },
@@ -47,7 +47,7 @@ const holdings = [
     image: holdingGym,
     logo: logoFitxgym,
     logoAlt: "FitX Gym",
-    logoClassName: "h-8 lg:h-10",
+    logoClassName: "h-7 sm:h-8 lg:h-10",
     description: "Premium & affordable 24-hour gym.",
   },
 ];
@@ -67,7 +67,7 @@ export default function Home() {
       <SiteNav />
 
       {/* ---------------------------------------------------------------- Hero */}
-      <section className="relative flex min-h-[88vh] items-end overflow-hidden bg-neutral-950 px-6 pb-16 pt-40 sm:px-10 lg:px-20 lg:pb-20">
+      <section className="relative flex min-h-[88vh] items-end overflow-hidden bg-neutral-950 px-6 pb-16 pt-28 sm:px-10 sm:pt-36 lg:px-20 lg:pb-20 lg:pt-40">
         {/* Backdrop placeholder — swap for a hero image */}
         <div
           aria-hidden
@@ -150,7 +150,7 @@ export default function Home() {
       </section>
 
       {/* ------------------------------------------------------------- Contact */}
-      <section className="relative overflow-hidden bg-white px-6 py-24 sm:px-10 lg:px-20">
+      <section className="relative overflow-hidden bg-white px-6 py-20 sm:px-10 sm:py-24 lg:px-20 lg:py-32">
         <Image
           src="/contact-bg.jpg"
           alt=""
@@ -159,7 +159,7 @@ export default function Home() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="relative mx-auto flex min-h-[55vh] max-w-7xl flex-col justify-between gap-16">
+        <div className="relative mx-auto flex min-h-[55vh] max-w-7xl flex-col justify-between gap-12 sm:gap-16">
           <h2 className="max-w-3xl text-4xl font-medium leading-tight text-black sm:text-5xl lg:text-7xl">
             Good things start with a short message.
           </h2>
