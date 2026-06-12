@@ -42,7 +42,7 @@ const holdings = [
     logoAlt: "Akasta Bali",
     logoClassName: "h-16 sm:h-20 lg:h-24 2xl:h-32",
     description:
-      "Akasta is where Indonesian flavors come together with stunning live performances, creating something you truly experience.",
+      "Indonesia’s first world-class dining entertainment group. Explore our venues in Jakarta and Bali featuring fine dining and live performances.",
   },
   {
     image: holdingGym,
