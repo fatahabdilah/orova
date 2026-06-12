@@ -34,7 +34,7 @@ export function SiteNav() {
           About Us
         </a>
         <a href="#portfolio" className="transition-opacity hover:opacity-70">
-          Portfolio
+          Holding
         </a>
       </div>
     </nav>
