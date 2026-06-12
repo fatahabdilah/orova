@@ -20,7 +20,7 @@ export function HoldingCard({
 }: HoldingCardProps) {
   return (
     <motion.article
-      className="group relative flex w-full items-center overflow-hidden bg-black min-h-[19rem] sm:min-h-[24rem] lg:aspect-[11/5] lg:min-h-0"
+      className="group relative flex w-full items-center overflow-hidden bg-black min-h-76 sm:min-h-96 md:min-h-112 lg:aspect-11/5 lg:min-h-0"
       initial="hidden"
       whileInView="shown"
       viewport={{ once: false, amount: 0.6 }}
@@ -52,7 +52,7 @@ export function HoldingCard({
       />
 
       {/* Reveal: logo (left) + description (right). Drives card height on mobile. */}
-      <div className="relative z-10 flex w-full flex-col gap-5 px-6 py-8 sm:gap-6 sm:px-10 sm:py-10 lg:flex-row lg:items-center lg:justify-between lg:gap-12 lg:px-20 lg:py-0">
+      <div className="relative z-10 flex w-full flex-col gap-5 px-6 py-8 sm:gap-6 sm:px-8 sm:py-10 md:px-12 lg:flex-row lg:items-center lg:justify-between lg:gap-12 lg:px-16 lg:py-0 xl:px-20">
         <motion.div
           variants={{
             hidden: { opacity: 0, y: 24 },
@@ -74,7 +74,7 @@ export function HoldingCard({
             shown: { opacity: 1, y: 0 },
           }}
           transition={{ duration: 0.5, delay: 0.05, ease: "easeOut" }}
-          className="max-w-xl text-base leading-relaxed text-white sm:text-lg lg:max-w-159 lg:text-2xl"
+          className="max-w-xl text-base leading-relaxed text-white sm:text-lg lg:max-w-159 lg:text-xl 2xl:text-2xl"
         >
           {description}
         </motion.p>
