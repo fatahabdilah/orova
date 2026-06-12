@@ -24,7 +24,7 @@ export function SiteNav() {
       <Link
         href="/"
         aria-label="Orova Group"
-        className="text-xl text-white lg:text-2xl"
+        className="text-base text-white sm:text-xl lg:text-2xl"
       >
         <span className="font-medium">OROVA</span>
         <span className="font-normal"> GROUP</span>

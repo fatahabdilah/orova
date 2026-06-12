@@ -18,10 +18,12 @@
 
 html {
   scroll-behavior: smooth;
+  /* Black behind overscroll / safe-area on mobile (matches theme-color) */
+  background-color: #000000;
 }
 
 body {
-  background: var(--background);
+  background-color: #000000;
   color: var(--foreground);
   font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
 }

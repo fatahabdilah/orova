@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   title: "Orova Group — Built with patience. Held with conviction.",
   description:
     "Orova Group builds and holds companies designed to outlast the moment they were made in.",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#000000",
 };
 
 export default function RootLayout({
