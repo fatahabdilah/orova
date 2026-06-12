@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { HeroVideo } from "./components/hero-video";
 import { HoldingCard } from "./components/holding-card";
 import { SiteNav } from "./components/site-nav";
 import holdingClipper from "../public/holding-clipper.jpg";
@@ -68,11 +69,8 @@ export default function Home() {
 
       {/* ---------------------------------------------------------------- Hero */}
       <section className="relative flex min-h-screen items-end overflow-hidden bg-neutral-950 px-6 pb-16 pt-28 sm:px-8 sm:pt-36 md:px-12 lg:px-16 lg:pb-20 lg:pt-40 xl:px-20">
-        {/* Backdrop placeholder — swap for a hero image */}
-        <div
-          aria-hidden
-          className="absolute inset-0 bg-linear-to-br from-neutral-700 via-neutral-900 to-black"
-        />
+        {/* Background video + dark overlay for legibility */}
+        <HeroVideo className="absolute inset-0 h-full w-full object-cover" />
         <div
           aria-hidden
           className="absolute inset-0 bg-linear-to-tr from-black via-black/60 to-transparent"
@@ -84,7 +82,7 @@ export default function Home() {
             <br />
             Held with conviction.
           </h1>
-          <div className="flex flex-wrap items-center gap-x-12 gap-y-6 lg:shrink-0 lg:justify-end lg:gap-x-16">
+          <div className="flex flex-wrap items-center gap-x-8 gap-y-5 lg:shrink-0 lg:justify-end lg:gap-x-10">
             {heroLogos.map((logo) => (
               <Image
                 key={logo.alt + logo.src.src}
