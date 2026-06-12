@@ -15,7 +15,7 @@ export function SiteNav() {
 
   return (
     <nav
-      className={`fixed inset-x-0 top-0 z-50 flex h-20 items-center justify-between px-6 transition-colors duration-300 sm:px-8 md:h-24 md:px-12 lg:h-28 lg:px-16 xl:px-20 ${
+      className={`fixed inset-x-0 top-0 z-50 flex h-16 items-center justify-between px-6 transition-colors duration-300 sm:px-8 md:h-20 md:px-12 lg:h-24 lg:px-16 xl:px-20 ${
         scrolled
           ? "border-b border-white/10 bg-black/40 backdrop-blur-md"
           : "border-b border-transparent bg-transparent"
@@ -24,7 +24,7 @@ export function SiteNav() {
       <Link
         href="/"
         aria-label="Orova Group"
-        className="text-2xl text-white lg:text-3xl"
+        className="text-xl text-white lg:text-2xl"
       >
         <span className="font-medium">OROVA</span>
         <span className="font-normal"> GROUP</span>
