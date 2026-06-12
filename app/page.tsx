@@ -13,10 +13,10 @@ import logoAkastaHero from "../public/logos/akasta-hero.png";
 import logoFitxgym from "../public/logos/fitxgym.png";
 
 const heroLogos = [
-  { src: logoTws, alt: "Trade With Suli", className: "h-7 lg:h-8" },
-  { src: logoKonten, alt: "Konten.com", className: "h-6 lg:h-7" },
-  { src: logoAkastaHero, alt: "Akasta Bali", className: "h-7 lg:h-9" },
-  { src: logoFitxgym, alt: "FitX Gym", className: "h-6 lg:h-7" },
+  { src: logoTws, alt: "Trade With Suli", className: "h-5 sm:h-6 lg:h-8" },
+  { src: logoKonten, alt: "Konten.com", className: "h-4 sm:h-5 lg:h-7" },
+  { src: logoAkastaHero, alt: "Akasta Bali", className: "h-5 sm:h-7 lg:h-9" },
+  { src: logoFitxgym, alt: "FitX Gym", className: "h-4 sm:h-5 lg:h-7" },
 ];
 
 const holdings = [
@@ -82,7 +82,7 @@ export default function Home() {
             <br />
             Held with conviction.
           </h1>
-          <div className="flex flex-wrap items-center gap-x-8 gap-y-5 lg:shrink-0 lg:justify-end lg:gap-x-10">
+          <div className="flex flex-nowrap items-center gap-x-3 sm:gap-x-6 lg:shrink-0 lg:justify-end lg:gap-x-10">
             {heroLogos.map((logo) => (
               <Image
                 key={logo.alt + logo.src.src}
