@@ -6,6 +6,10 @@ import holdingClipper from "../public/holding-clipper.jpg";
 import holdingEducation from "../public/holding-education.jpg";
 import holdingAkasta from "../public/holding-akasta.jpg";
 import holdingGym from "../public/holding-gym.jpg";
+import holdingClipperSq from "../public/holding-konten-sq.jpg";
+import holdingEducationSq from "../public/holding-tws-sq.png";
+import holdingAkastaSq from "../public/holding-akasta-sq.png";
+import holdingGymSq from "../public/holding-gym-sq.jpg";
 import logoKonten from "../public/logos/konten.png";
 import logoTws from "../public/logos/tws.png";
 import logoAkasta from "../public/logos/akasta.png";
@@ -22,6 +26,7 @@ const heroLogos = [
 const holdings = [
   {
     image: holdingClipper,
+    imageMobile: holdingClipperSq,
     logo: logoKonten,
     logoAlt: "Konten.com",
     logoClassName: "h-6 sm:h-7 lg:h-8 2xl:h-9",
@@ -30,6 +35,7 @@ const holdings = [
   },
   {
     image: holdingEducation,
+    imageMobile: holdingEducationSq,
     logo: logoTws,
     logoAlt: "Trade With Suli",
     logoClassName: "h-8 sm:h-10 lg:h-11 2xl:h-12",
@@ -38,6 +44,7 @@ const holdings = [
   },
   {
     image: holdingAkasta,
+    imageMobile: holdingAkastaSq,
     logo: logoAkasta,
     logoAlt: "Akasta Bali",
     logoClassName: "h-16 sm:h-20 lg:h-24 2xl:h-32",
@@ -46,6 +53,7 @@ const holdings = [
   },
   {
     image: holdingGym,
+    imageMobile: holdingGymSq,
     logo: logoFitxgym,
     logoAlt: "FitX Gym",
     logoClassName: "h-7 sm:h-8 lg:h-9 2xl:h-10",
@@ -135,11 +143,12 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex flex-col bg-black [&>*:not(:first-child)]:-mt-px">
+        <div className="grid grid-cols-2 bg-black lg:flex lg:flex-col lg:[&>*:not(:first-child)]:-mt-px">
           {holdings.map((company) => (
             <HoldingCard
               key={company.logoAlt}
               image={company.image}
+              imageMobile={company.imageMobile}
               logo={company.logo}
               logoAlt={company.logoAlt}
               logoClassName={company.logoClassName}
